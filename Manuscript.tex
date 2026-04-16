@@ -1,0 +1,179 @@
+
+\documentclass{ManuscriptStyle}
+\bianhao{MC2605634}
+\tihao{A}
+\timu{论文标题}
+\keyword{关键词1；关键词2；关键词3}
+\bibliographystyle{gbt7714-numerical}
+\begin{document}
+	\begin{abstract}
+        我是摘要。
+
+		我是摘要。
+
+		我是摘要。
+	\end{abstract}
+
+	\tableofcontents\newpage
+    \clearpage
+    \pagenumbering{arabic}
+    \pagestyle{fancy}
+ 
+	\section{问题提出}
+
+	\subsection{问题背景}
+
+	我是背景。
+
+	我是背景。
+
+	我是背景。
+
+	\subsection{问题重述}
+
+	我是重述。
+
+	我是重述。
+
+	我是重述。
+
+	\section{问题分析}
+
+	\subsection{问题一的分析}
+
+	我是问题一的分析。
+
+	我是问题一的分析。
+
+	我是问题一的分析。
+
+	\subsection{问题二的分析}
+
+	我是问题二的分析。
+
+	我是问题二的分析。
+
+	我是问题二的分析。
+
+	\subsection{问题三的分析}
+
+	我是问题三的分析。
+
+	我是问题三的分析。
+
+	我是问题三的分析。
+
+	\subsection{问题四的分析}
+
+	我是问题四的分析。
+
+	我是问题四的分析。
+
+	我是问题四的分析。
+
+	\section{模型假设}
+	\begin{enumerate}
+		\item 假设1；
+		\item 假设2；
+		\item 假设3；
+		\item 假设4；
+		\item 假设5：
+	\end{enumerate}
+
+	\section{符号说明}
+
+	\begin{center}
+		\begin{tabularx}{0.7\textwidth}{c@{\hspace{1pc}}|@{\hspace{2pc}}X}
+			\Xhline{0.08em}
+			符号 & \multicolumn{1}{c}{符号说明}\\
+			\Xhline{0.05em}
+			$\delta$ & 符号1\\
+			$\beta$ & 符号2\\
+			$\alpha$ & 符号3\\
+			$r$ & 符号4\\
+			$\gamma$ & 符号5\\
+			$l$ & 符号6\\
+			$l_{y}$ & 符号7\\
+			$\vec{x}_{1},\vec{y}_{1},\vec{z}_{1}$ & 符号8\\
+			$\vec{\hat{x}}_{1},\vec{\hat{y}}_{1},\vec{\hat{z}}_{1}$ & 符号9\\
+			$\theta$ & 符号10\\
+			$l_{y}(i)$ & 编号为 $i$ 符号11\\
+			$\theta_{i}$ & 编号为 $i$ 符号12\\
+			\Xhline{0.08em}
+		\end{tabularx}
+	\end{center}
+
+	\section{模型的建立与求解}
+
+	\subsection{问题一模型的建立与求解}
+	我是\cref{Fig1}。
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figure/队徽.png}
+		\caption{我是数学建模团队的队徽.}\label{Fig1}
+	\end{figure}
+ 
+	\subsection{问题二模型的建立与求解}
+ 
+	我是\cref{Tab1}。
+ 
+	\begin{table}[h]
+		\centering
+		\caption{我是表格.}\label{Tab1}
+		\begin{tabularx}{0.7\textwidth}{c@{\hspace{1pc}}|@{\hspace{2pc}}X}
+		\Xhline{0.08em}
+		符号 & \multicolumn{1}{c}{符号说明}\\
+		\Xhline{0.05em}
+		$\delta$ & 赤纬角\\
+		$\beta$ & 经度\\
+		$\alpha$ & 纬度\\
+		$r$ & 地球半径\\
+		$\gamma$ & 太阳光与杆所成的夹角\\
+		$l$ & 杆的长度\\
+		$l_{y}$ & 杆的影子长度\\
+		$\vec{x}_{1},\vec{y}_{1},\vec{z}_{1}$ & 由杆的位置所生成的切平面的正交基\\
+		$\vec{\hat{x}}_{1},\vec{\hat{y}}_{1},\vec{\hat{z}}_{1}$ & 由杆的位置所生成的切平面的单位正交基\\
+		$\theta$ & 影子与北方的夹角\\
+		$l_{y}(i)$ & 编号为 $i$ 的数据对应的影子长度\\
+		$\theta_{i}$ & 编号为 $i$ 的数据对应的影子角度\\			\Xhline{0.08em}
+		\end{tabularx}
+	\end{table}
+ 
+	\subsection{问题三模型的建立与求解}
+
+	我是引用\cite{wang2020-p1}
+
+	\subsection{问题四模型的建立与求解}
+
+	I am from GDOU.
+
+	\section{模型评价与改进}
+
+	\subsection{模型优点}
+
+	\subsection{模型缺点}
+
+	\subsection{模型改进}
+
+	\phantomsection
+	\addcontentsline{toc}{section}{参考文献}
+	\bibliography{ManuscriptReferences}
+
+	\newpage
+	\appendix
+	\ctexset{section={
+		format={\zihao{-4}\heiti\raggedright}
+	}}
+	\begin{center}
+		\heiti\zihao{4} 附\hspace{1pc}录
+	\end{center}
+	
+\section{问题一的 Python 代码}
+  \begin{python}
+      import torch
+      import numpy as np
+      import pandas as pd
+      for i in range(100):
+          print('demo')
+  \end{python}
+\end{document}

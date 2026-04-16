@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[王安\ 等(2020)王安 and 顾益军]{wang2020-p1}
+王安, 顾益军.
+\newblock 基于社区划分的节点重要性评估方法\allowbreak[J].
+\newblock 计算机工程与应用, 2020, 56\allowbreak (8): 42-48.
+
+\end{thebibliography}
