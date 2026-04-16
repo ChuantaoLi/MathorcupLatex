@@ -7,18 +7,10 @@
 - 编译流程修复：已统一为“清理后强制重编译”，用于修复总页码 ?? 、旧缓存不更新等问题。
 - 目录显示修复：修复了参考文献在目录中格式不正确的问题。
 
-如果 Ctrl+S 无法编译，可以先清除缓存再编译。
-
-清除缓存的运行指令为：
+无论是在 Overleaf 还是本地编译，都需要先将编译器设置为 XeLaTeX，否则会导致编译错误。在本地可以通过以下指令进行编译：
 
 ```bash
-latexmk -C Manuscript.tex
-```
-
-编译的指令为：
-
-```bash
-latexmk -gg -pdf Manuscript.tex
+latexmk -xelatex -synctex=1 -interaction=nonstopmode -file-line-error Manuscript.tex
 ```
 
 ![Manuscript_01](https://lctmemos.oss-cn-beijing.aliyuncs.com/img/Manuscript_01.png)
