@@ -13,6 +13,10 @@
 latexmk -xelatex -synctex=1 -interaction=nonstopmode -file-line-error Manuscript.tex
 ```
 
+如果不想运行上述指令编译，也是可以的，直接ctrl+s。
+
+本地编译LaTex的时候，因为默认是pdflatex编译器，所以ctrl+s保存的默认编译会在该模板上报错。如果不去settings.json中设置，可以直接在.tex首行添加：% !TEX program = xelatex。这时候ctrl+s可以正常编译，但页底的页码无法正常显示，不过不影响其他地方的阅读，要恢复的话再ctrl+s一次就行了。
+
 ![Manuscript_01](https://lctmemos.oss-cn-beijing.aliyuncs.com/img/Manuscript_01.png)
 
 ![Manuscript_02](https://lctmemos.oss-cn-beijing.aliyuncs.com/img/Manuscript_02.png)
