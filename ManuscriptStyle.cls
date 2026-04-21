@@ -61,7 +61,9 @@
 \phantom{1}\\
 \rule{\textwidth}{1.5pt}\\
 \phantom{1}\\
-\phantom{1}\hfill{\zihao{4}\@timu}\hfill\phantom{1}\\
+\begin{center}
+{\heiti\zihao{4}\@timu}
+\end{center}
 \phantom{1}\hfill{\label{zy}摘~~要}\hfill\phantom{1}\pdfbookmark[1]{摘要}{zy}\par%
 }{\\\phantom{1}\\关键词：\@keyword\thispagestyle{empty}\setcounter{page}{-1}
 \newpage\thispagestyle{empty}
@@ -78,7 +80,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand\headrulewidth{0pt}
-\fancyfoot[C]{第 \thepage{} 页~~共 \pageref{LastPage} 页}
+\fancyfoot[C]{\thepage}
 \RequirePackage{titletoc}
 \titlecontents{section}[0pt]{\addvspace{2pt}\filright}%
 {\heiti\contentspush{\thecontentslabel\ }}%
